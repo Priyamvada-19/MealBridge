@@ -143,6 +143,5 @@ MealBridge/
 * Real-world problem solving through technology
 
 ```
-```
 ## Author
 Priyamvada Kumar
