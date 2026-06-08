@@ -1,0 +1,363 @@
+.foodshare-page {
+  min-height: 100vh;
+  background: #ffeac2;
+  background-image: radial-gradient(#bf9e6d 1px, transparent 1px);
+  background-size: 25px 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.hero-section {
+  width: 1400px;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 80px;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 900px;
+}
+
+.brand {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+
+}
+
+.hero-left h1 {
+  font-size: 3.5rem;
+  line-height: 1.05;
+  color: #b66a3a;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.hero-left p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 550px;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.features {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 140px;
+  height: 110px;
+
+  background: #fff9f9;
+
+  border-radius: 31px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 8px 20px rgba(83, 35, 7, 0.364);
+
+  transition: all 0.3s ease;
+
+  font-size: 32px;
+  font-style: italic;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-card span {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
+.hero-right {
+  width: 580px;
+  min-width: 580px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+
+  margin-top: 65px;
+}
+
+.loading-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.loading-card{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  min-width:300px;
+}
+
+.spinner{
+  width:60px;
+  height:60px;
+  border:6px solid #eee;
+  border-top:6px solid #d88a22;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+  margin:auto;
+  margin-bottom:20px;
+}
+
+
+.login-card {
+  width: 100%;
+
+  min-height: 650px;
+
+  background: rgba(253, 180, 70, 0.325);
+
+  padding: 50px;
+
+  border-radius: 110px;
+
+  box-shadow: 0 20px 40px rgba(108, 66, 11, 0.495);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-card h2 {
+  text-align: center;
+  color: #3d1b05;
+  margin-bottom: 10px;
+  font-size: 60px;
+  font-style: italic;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.login-card input {
+  width: 100%;
+
+  padding: 15px;
+
+  margin-bottom: 18px;
+
+  border: 1px solid #ddd;
+  border-radius: 14px;
+
+  font-size: 15px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #82560a;
+}
+
+.login-btn {
+  width: 100%;
+
+  border: none;
+
+  padding: 15px;
+
+  border-radius: 14px;
+
+  background: #dba23f;
+
+  color: white;
+
+  font-size: 24px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #ea8c00;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.register-link span {
+  margin-left: 5px;
+  color: #f59e0b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.about-card {
+  margin-top: 85px;
+
+  background: rgba(255, 249, 238, 0.72);
+
+  padding: 25px;
+
+  border-radius: 30px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.314);
+
+  border-left: 13px solid rgb(183, 118, 6);
+}
+
+.about-card h3 {
+  margin: 0 0 12px 0;
+
+  color: #100808;
+
+  font-size: 1.9rem;
+  
+  text-align: center;
+}
+
+.about-card p {
+  margin: 0;
+
+  color: #1e1d1d;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider span {
+  padding: 0 12px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Tablet */
+
+@keyframes spin{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-section {
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-right {
+    width: 360px;
+    min-width: 360px;
+  }
+
+  .login-card {
+    min-height: 650px;
+    max-width: 560px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .foodshare-page {
+    padding: 30px 15px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-left p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .hero-right {
+    width: 100%;
+    min-width: auto;
+    max-width: 450px;
+  }
+
+  .login-card {
+    min-height: auto;
+    max-width: 400px;
+    padding: 30px;
+  }
+}

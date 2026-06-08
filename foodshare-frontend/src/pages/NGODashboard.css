@@ -1,0 +1,167 @@
+.ngo-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f8edd4;
+  background-image: radial-gradient(
+    #d7b46a 1px,
+    transparent 1px
+  );
+  background-size: 25px 25px;
+}
+
+/* Sidebar */
+
+.ngo-sidebar {
+  width: 260px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 4px 0 20px rgba(0,0,0,0.1);
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ngo-sidebar h2 {
+  color: #7a3e00;
+  font-size: 38px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.ngo-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ngo-sidebar li {
+  margin: 30px 0;
+  cursor: pointer;
+  color: #5c2e00;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.ngo-sidebar li:hover {
+  transform: translateX(6px);
+  color: #d18423;
+}
+
+/* Main */
+
+.ngo-main {
+  flex: 1;
+  padding: 40px;
+}
+
+.welcome-title {
+  text-align: center;
+  color: #5c2e00;
+  margin-bottom: 40px;
+  font-size: 48px;
+}
+
+/* Stats */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+  color: #5c2e00;
+}
+
+.stat-card h2 {
+  color: #d18423;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* Content */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+/* Table Card */
+
+.table-card {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.table-card h2 {
+  color: #5c2e00;
+  margin-bottom: 20px;
+}
+
+.table-card table {
+  width: 100%;
+}
+
+.table-card th {
+  background: #d18423;
+  color: white;
+  padding: 12px;
+}
+
+.table-card td {
+  padding: 12px;
+}
+
+/* Buttons */
+
+.claim-btn {
+  background: #d18423;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.claim-btn:hover {
+  background: #b96e12;
+}
+
+.claimed-text {
+  color: green;
+  font-weight: bold;
+}
+
+/* Impact Card */
+
+.impact-card {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.impact-card h2 {
+  color: #5c2e00;
+}
+
+.impact-number {
+  font-size: 80px;
+  font-weight: bold;
+  color: #d18423;
+  margin: 30px 0;
+}
